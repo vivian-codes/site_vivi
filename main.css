@@ -1,0 +1,109 @@
+
+/* bordas automaticamente simetricas*/
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header { 
+    background-color: #dc96bf; 
+    padding: 16px 0;
+    color: white;
+
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family :Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.article { /*texto dos artigos*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article article img {
+    /*height: 180px;*/
+    width: 100%;
+}
+
+.article article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.article article {
+    margin-bottom: 16px;
+}
+
+.article article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.article article a {
+    background-color: blue;
+    color:azure;
+    padding: 8px;
+    display: inline-block; 
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;   
+}
+
+.article article a:hover {
+    text-decoration: underline;
+}
+
+.article article p,
+.article article a {
+    font-family :Arial, Helvetica, sans-serif;
+}
+
+.article article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+#filmes {
+    background-color: hwb(181 70% 11% / 0.885);
+}
+#filmes .article article a{
+    background-color: #87d3e6;
+}
+
+#séries {
+    background-color: #f1f2b8;
+}
+
+#séries .article article a{
+    background-color: #ffd000e8;
+}
+
+    
