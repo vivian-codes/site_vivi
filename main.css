@@ -106,4 +106,18 @@ section h2 {
     background-color: #ffd000e8;
 }
 
-    
+#anime {
+    background-color: hsl(117, 65%, 84%);
+}
+
+#anime .article article a{
+    background-color: #b9e68ee8;
+}
+
+#manhwa {
+    background-color: hsl(344, 65%, 84%);
+}
+
+#manhwa .article article a{
+    background-color: hsl(344, 64%, 74%);
+}
