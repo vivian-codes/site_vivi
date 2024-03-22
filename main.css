@@ -1,16 +1,27 @@
-
-/* bordas automaticamente simetricas*/
+/* bordas automaticamente simétricas */
 * { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+header,
+section h2,
+section h3,
+form button {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: normal;
+}
+
+body, input, textarea,
+.article article p {
+    font-family: "Pattaya", sans-serif;
+}
+
 body > header { 
-    background-color: #c74ae9; 
+    background-color: hsl(315, 72%, 36%); 
     padding: 16px 0;
     color: white;
-
 }
 
 header .container{
@@ -21,22 +32,20 @@ header .container{
 
 header li {
     display: inline;
-    font-family :Arial, Helvetica, sans-serif;
-    font-weight: bold;
     margin-left: 16px;
 }
 
 header li a {
-    color: aliceblue;
+    color: white;
     text-decoration: none;
 }
 
 .container {
-    width: 1366px;
+    width: 1280px;
     margin: 0 auto;
 }
 
-.article { /*texto dos artigos*/
+.article { /* texto dos artigos */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -55,69 +64,117 @@ section {
     padding: 16px 0;
 }
 
-section h2,
+section h2, /* espaçamento título e img */
 .article article {
     margin-bottom: 16px;
 }
 
-.article article h3 {
-    margin-top: 8px;
-    margin-bottom: 8px;
+.article article h3 { /* espaçamento img e texto */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
-.article article a {
-    background-color: blue;
-    color:azure;
-    padding: 8px;
-    display: inline-block; 
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 8px;   
+.article article a { /* configuração do token 'ler mais' */
+    background-color: hsl(344, 64%, 74%); /* cor do quadrado */
+    color: black; /* cor da letra */
+    padding: 8px; /* tamanho da caixa */
+    display: inline-block;
+    text-decoration: double;
+    font-weight: lighter;
+    margin-top: 8px;  /* espaçamento token 'ler mais' do texto */  
 }
 
 .article article a:hover {
-    text-decoration: underline;
+    background-color:hsl(315, 72%, 36%)/* quando passa o mouse em cima do 'ler mais' */
 }
 
-.article article p,
 .article article a {
-    font-family :Arial, Helvetica, sans-serif;
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: none; /* fonte do que está escrito */
 }
 
 .article article h3 {
-    font-size: 24px;
+    font-size: 1rem; /* tamanho dos subtítulos ajustado */
 }
 
-section h2 {
+section h2 { /* tamanho do título */
     font-size: 32px;
 }
-#filmes {
-    background-color: hwb(181 70% 11% / 0.885);
-}
-#filmes .article article a{
-    background-color: #87d3e6;
-}
 
-#séries {
-    background-color: #f1f2b8;
-}
-
-#séries .article article a{
-    background-color: #ffd000e8;
-}
-
+#filmes,
 #anime {
-    background-color: hsl(117, 65%, 84%);
+    background-color: #f3e9f2;
 }
 
-#anime .article article a{
-    background-color: #b9e68ee8;
-}
-
+#séries,
 #manhwa {
-    background-color: hsl(344, 65%, 84%);
+    background-color: #e0d6e0;
 }
 
-#manhwa .article article a{
+
+#contact {
+    background-color: #e7dee6; /* Cor de fundo desejada */
+    padding: 24px 0; /* Adicione preenchimento interno conforme necessário */
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px; /* dentro das áreas nome, email, tel */
+}
+
+form textarea { /* área do texto que escreve mensagem */
+    resize: none;
+    height: 180px;
+}
+
+section h3 { /* fale conosco */
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: hsl(315, 72%, 36%); /* botão de enviar */
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover { /* cor botão enviar quando passa mouse em cima */
     background-color: hsl(344, 64%, 74%);
+}
+
+input:focus, textarea:focus { /* quando a pessoa clica no texto fica a área, a linha ao redor marcada com a cor */
+    outline-color: #d38cb8;
+}
+
+footer {
+    background-color: hsl(315, 72%, 36%);
+    color: white;
+    padding: 16px 0;
 }
